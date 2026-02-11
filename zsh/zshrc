@@ -1,4 +1,22 @@
+
+# ===== Existing config =====
 eval "$(zoxide init zsh --cmd cd)"
-
-
 . "$HOME/.local/bin/env"
+
+# ===== Minimal shell customization =====
+
+# Short hostname for prompt (first part of the machine name)
+HOSTNAME_SHORT=${HOST%%.*}
+
+# Prompt: blue username@host, white current dir, blue arrow
+PROMPT="%F{blue}%n@${HOSTNAME_SHORT}%f %F{white}%1~ %F{blue}→ %f "
+
+# Useful aliases
+alias ll='ls -alh'
+alias la='ls -A'
+alias l='ls -CF'
+alias ls='ls --color=auto'
+alias eza='ls'        # replace eza with ls
+alias dc='cd'         # common typo fix
+
+
