@@ -1,0 +1,16 @@
+# caches and temp files
+*.DS_Store
+.cache/
+.local/
+.tldrc
+*.log
+*.swp
+
+# histories
+.zsh_history
+.python_history
+.lesshst
+
+# system files
+.Trash/
+
